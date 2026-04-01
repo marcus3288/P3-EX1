@@ -27,7 +27,7 @@ body {
 }
 
 .box2 {
-  background: linear-gradient(to left, black 70%, #b9b0b0);
+  background: linear-gradient(to left, white 70%, #b9b0b0);
   transform: translateX(50%) rotateY(-65deg);
   transform-origin: left center;
 }/*# sourceMappingURL=styles.css.map */
