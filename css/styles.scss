@@ -21,7 +21,7 @@ body {
 
 .box {
   background: linear-gradient(to right, white 70%, #b9b0b0);
-  width: 100%;
+  width: 500px;
   height: 300px;
   transform-style: preserve-3d;
   transform: translateX(-50%) rotateY(65deg);
@@ -29,18 +29,82 @@ body {
   font-family: Impact, sans-serif;
   font-weight: bold italic;
   font-size: 5em;
+  overflow: hidden;
 }
 
-.box-nth-child(odd) {
-  background: linear-gradient(to right, white 70%, #b9b0b0);
-  transform: translateX(-50%) rotateY(65deg);
-  transform-origin: right center;
+.box div {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  // text-align: right;
 }
+
+.box-inner {
+  transform: rotateY(-65deg); // cancels the parent's rotation
+  padding: 0 2rem;
+  // your text styles here
+}
+
+.title {
+  font-size: 100px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.header {
+  font-size: 150px;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background-image: url("../Links/pawn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  top: 32px;
+  left: -80px;
+  // transform: ;
+}
+
+.img {
+  width: 20px;
+}
+
+// .text {
+//   font-size: 20px;
+//   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+// }
+
+// .box-nth-child(odd) {
+//   background: linear-gradient(to right, white 70%, #b9b0b0);
+//   transform: translateX(-50%) rotateY(65deg);
+//   transform-origin: right center;
+// }
 
 .box2 {
   background: linear-gradient(to left, white 70%, #b9b0b0);
   transform: translateX(50%) rotateY(-65deg);
   transform-origin: left center;
+  width: 500px;
+  height: 300px;
+  transform-style: preserve-3d;
+  font-family: Impact, sans-serif;
+  font-weight: bold italic;
+  font-size: 5em;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.box2 .box-inner {
+  transform: rotateY(65deg);
 }
 
 // .fin {
