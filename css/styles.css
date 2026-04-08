@@ -75,6 +75,11 @@ body {
   width: 20px;
 }
 
+.text {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 .box2 {
   background: linear-gradient(to left, white 70%, #b9b0b0);
   transform: translateX(50%) rotateY(-65deg);
