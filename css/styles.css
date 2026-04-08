@@ -24,7 +24,7 @@ body {
   width: 500px;
   height: 300px;
   transform-style: preserve-3d;
-  transform: translateX(-50%) rotateY(65deg);
+  transform: translateX(-50%) rotateY(55deg);
   transform-origin: right center;
   font-family: Impact, sans-serif;
   font-weight: bold italic;
@@ -33,7 +33,6 @@ body {
 }
 
 .box div {
-  margin: 0;
   padding: 0;
   width: -moz-fit-content;
   width: fit-content;
@@ -44,10 +43,29 @@ body {
 .box-inner {
   transform: rotateY(-65deg);
   padding: 0 2rem;
+  align-items: left;
+  align-content: left;
+  align-items: flex-end;
+  margin: 0 0 80px 0;
+}
+
+.box-inner2 {
+  transform: rotateY(-65deg);
+  padding: 0 2rem;
+  align-items: right;
+  align-content: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0 0 80px;
+}
+
+.k-inner {
+  margin: 0 0 0 180px;
 }
 
 .title {
-  font-size: 100px;
+  font-size: 250px;
 }
 
 .subtitle {
@@ -59,16 +77,109 @@ body {
   position: relative;
 }
 
+.header2 {
+  text-align: right;
+  align-content: right;
+  font-size: 150px;
+}
+
+.header3 {
+  font-size: 150px;
+  position: relative;
+}
+
+.header4 {
+  text-align: right;
+  align-content: right;
+  font-size: 150px;
+}
+
+.header5 {
+  font-size: 150px;
+  position: relative;
+}
+
+.header6 {
+  text-align: right;
+  align-content: right;
+  font-size: 150px;
+}
+
+.header7 {
+  font-size: 100px;
+  position: relative;
+}
+
 .header::before {
   content: "";
   background-image: url("../Links/pawn.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 32px;
-  left: -80px;
+  width: 410px;
+  height: 410px;
+  top: -50px;
+  left: -320px;
+}
+
+.header2::after {
+  content: "";
+  background-image: url("../Links/knight.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  top: -60px;
+  right: -300px;
+}
+
+.header3::before {
+  content: "";
+  background-image: url("../Links/rook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  top: -90px;
+  left: -320px;
+}
+
+.header4::after {
+  content: "";
+  background-image: url("../Links/bishop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -5px;
+  right: -270px;
+}
+
+.header5::before {
+  content: "";
+  background-image: url("../Links/queen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: -5px;
+  left: -250px;
+}
+
+.header6::after {
+  content: "";
+  background-image: url("../Links/king.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 0px;
+  right: -250px;
 }
 
 .img {
@@ -76,8 +187,14 @@ body {
 }
 
 .text {
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text2 {
+  font-size: 25px;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .box2 {
