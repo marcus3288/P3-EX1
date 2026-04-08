@@ -24,10 +24,48 @@ body {
   transform-style: preserve-3d;
   transform: translateX(-50%) rotateY(65deg);
   transform-origin: right center;
+  position: relative;
+  z-index: -1;
 }
 
 .box2 {
   background: linear-gradient(to left, black 70%, #b9b0b0);
   transform: translateX(50%) rotateY(-65deg);
   transform-origin: left center;
-}/*# sourceMappingURL=styles.css.map */
+   position: relative;
+  z-index: 11;
+} /*# sourceMappingURL=styles.css.map */
+h1 {
+  font-size: 60px;
+  color: red;
+
+}
+img{
+  height: 600px;
+  width: 1094;
+}
+.piece-desc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    position: relative;
+  z-index: 6;
+  top: -4700px ;
+
+}
+.left-info-collum{
+   transform-style: preserve-3d;
+  transform: translateX(-50%) rotateY(63deg);
+  transform-origin: right center;
+
+}
+.right-info-collum{
+    transform-style: preserve-3d;
+  transform: translateX(-50%) rotateY(63deg);
+  transform-origin: right center;
+
+}
+//*h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}//*
